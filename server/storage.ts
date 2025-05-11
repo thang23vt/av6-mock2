@@ -51,12 +51,12 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "2. At book fairs, students can exchange the bins.",
+        question: "2. At book fairs, students can exchange their old books.",
         options: [
           { id: "A", text: "True" },
           { id: "B", text: "False" }
         ],
-        correctAnswer: "B",
+        correctAnswer: "A",
         instruction: null,
         sentence: null
       },
@@ -87,12 +87,26 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "5. Linda's dream house is a big villa ____ the sea.",
+        question: "5. Linda's dream house is a __________.",
         options: [
-          { id: "A", text: "by" },
-          { id: "B", text: "in" },
-          { id: "C", text: "on" },
-          { id: "D", text: "at" }
+          { id: "A", text: "palace" },
+          { id: "B", text: "big villa" },
+          { id: "C", text: "big flat" },
+          { id: "D", text: "apartment" }
+        ],
+        correctAnswer: "B",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "6. There's a swimming pool and a __________ around her house.",
+        options: [
+          { id: "A", text: "garden" },
+          { id: "B", text: "robot" },
+          { id: "C", text: "helicopter" },
+          { id: "D", text: "computer" }
         ],
         correctAnswer: "A",
         instruction: null,
@@ -101,26 +115,12 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "6. Linda's dream house has a view of the ____.",
+        question: "7. Nick's flat is in the __________.",
         options: [
-          { id: "A", text: "garden" },
-          { id: "B", text: "sea" },
-          { id: "C", text: "pool" },
-          { id: "D", text: "villa" }
-        ],
-        correctAnswer: "B",
-        instruction: null,
-        sentence: null
-      },
-      {
-        id: this.currentQuestionId++,
-        type: "multipleChoice",
-        question: "7. Linda's dream house has a swimming pool and a ____.",
-        options: [
-          { id: "A", text: "sea" },
-          { id: "B", text: "villa" },
-          { id: "C", text: "garden" },
-          { id: "D", text: "view" }
+          { id: "A", text: "country" },
+          { id: "B", text: "island" },
+          { id: "C", text: "city" },
+          { id: "D", text: "Moon" }
         ],
         correctAnswer: "C",
         instruction: null,
@@ -129,26 +129,12 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "8. Nick's dream house is ____ Linda's.",
+        question: "8. He can watch __________ from other planets.",
         options: [
-          { id: "A", text: "similar to" },
-          { id: "B", text: "different from" },
-          { id: "C", text: "the same as" },
-          { id: "D", text: "bigger than" }
-        ],
-        correctAnswer: "B",
-        instruction: null,
-        sentence: null
-      },
-      {
-        id: this.currentQuestionId++,
-        type: "multipleChoice",
-        question: "9. I ____ an English test tomorrow.",
-        options: [
-          { id: "A", text: "have" },
-          { id: "B", text: "has" },
-          { id: "C", text: "had" },
-          { id: "D", text: "will have" }
+          { id: "A", text: "cartoons" },
+          { id: "B", text: "news" },
+          { id: "C", text: "comedies" },
+          { id: "D", text: "films" }
         ],
         correctAnswer: "D",
         instruction: null,
@@ -157,14 +143,116 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "10. They will ____ rubbish at the park next week.",
+        question: "9. In the future, we __________ live in a UFO.",
         options: [
-          { id: "A", text: "plant" },
-          { id: "B", text: "use" },
-          { id: "C", text: "pick up" },
-          { id: "D", text: "save" }
+          { id: "A", text: "don't" },
+          { id: "B", text: "didn't" },
+          { id: "C", text: "must" },
+          { id: "D", text: "might" }
+        ],
+        correctAnswer: "D",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "10. __________ they go to the beach last month?",
+        options: [
+          { id: "A", text: "Do" },
+          { id: "B", text: "Did" },
+          { id: "C", text: "Does" },
+          { id: "D", text: "Are" }
+        ],
+        correctAnswer: "B",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "11. A __________ can help us to wash and dry clothes.",
+        options: [
+          { id: "A", text: "dishwasher" },
+          { id: "B", text: "smart clock" },
+          { id: "C", text: "fridge" },
+          { id: "D", text: "washing machine" }
+        ],
+        correctAnswer: "D",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "12. __________ Moon is bright tonight.",
+        options: [
+          { id: "A", text: "A" },
+          { id: "B", text: "An" },
+          { id: "C", text: "The" },
+          { id: "D", text: "Some" }
         ],
         correctAnswer: "C",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "13. People need to breathe. If they don't breathe, they ______ die.",
+        options: [
+          { id: "A", text: "will" },
+          { id: "B", text: "are" },
+          { id: "C", text: "must" },
+          { id: "D", text: "will not" }
+        ],
+        correctAnswer: "A",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "14. If they breathe ______ air, they will have breathing problems and become ill.",
+        options: [
+          { id: "A", text: "clean" },
+          { id: "B", text: "fresh" },
+          { id: "C", text: "dirty" },
+          { id: "D", text: "new" }
+        ],
+        correctAnswer: "C",
+        instruction: null,
+        sentence: null
+      }
+    ];
+
+    // Drag and drop questions
+    const dragDropQuestions = [
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "15. A lot of the things in our lives create harmful gases and ______ the air dirty.",
+        options: [
+          { id: "A", text: "make" },
+          { id: "B", text: "get" },
+          { id: "C", text: "give" },
+          { id: "D", text: "do" }
+        ],
+        correctAnswer: "A",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "16. Dirty air is called \"______ air\".",
+        options: [
+          { id: "A", text: "pollute" },
+          { id: "B", text: "polluted" },
+          { id: "C", text: "polluting" },
+          { id: "D", text: "pollution" }
+        ],
+        correctAnswer: "B",
         instruction: null,
         sentence: null
       },
@@ -223,64 +311,24 @@ export class MemStorage implements IStorage {
         correctAnswer: "C",
         instruction: null,
         sentence: null
-      }
-    ];
-
-    // Drag and drop questions
-    const dragDropQuestions = [
-      {
-        id: this.currentQuestionId++,
-        type: "dragDrop",
-        question: null,
-        options: ["and", "but", "so", "because"],
-        correctAnswer: ["but"],
-        instruction: "11. Complete the sentence by dragging the correct word into the blank.",
-        sentence: "My sister is good at school, ____ I'm not."
       },
       {
         id: this.currentQuestionId++,
         type: "dragDrop",
         question: null,
-        options: ["him", "she", "her", "hers"],
-        correctAnswer: ["hers"],
-        instruction: "12. Complete the sentence by dragging the correct word into the blank.",
-        sentence: "This pen isn't mine. It's ____."
+        options: ["was", "lazy", "so", "got"],
+        correctAnswer: ["so"],
+        instruction: "21. Find the underlined part that needs correction. Because Nam was lazy, so he got a bad mark.",
+        sentence: "Because Nam was lazy, ____ he got a bad mark."
       },
       {
         id: this.currentQuestionId++,
         type: "dragDrop",
         question: null,
-        options: ["viewers", "characters", "channels", "comedies"],
-        correctAnswer: ["viewers"],
-        instruction: "13. Complete the sentence by dragging the correct word into the blank.",
-        sentence: "VTV1 is a popular TV channel in Viet Nam. It attracts many ____ because it has interesting programmes."
-      },
-      {
-        id: this.currentQuestionId++,
-        type: "dragDrop",
-        question: null,
-        options: ["sports", "animal", "game show", "talent show"],
-        correctAnswer: ["animal"],
-        instruction: "14. Complete the sentence by dragging the correct word into the blank.",
-        sentence: "The ____ programmes show tigers and giraffes in nature."
-      },
-      {
-        id: this.currentQuestionId++,
-        type: "dragDrop",
-        question: null,
-        options: ["comedies", "news", "wildlife", "music"],
-        correctAnswer: ["comedies"],
-        instruction: "15. Complete the sentence by dragging the correct word into the blank.",
-        sentence: "_____ make people laugh because they are funny."
-      },
-      {
-        id: this.currentQuestionId++,
-        type: "dragDrop",
-        question: null,
-        options: ["because", "so", "but", "and"],
-        correctAnswer: ["because"],
-        instruction: "16. Complete the sentence by dragging the correct word into the blank.",
-        sentence: "Game shows are both fun and educational. make people laugh ____ they are funny."
+        options: ["younger", "is", "interested on", "watching"],
+        correctAnswer: ["interested on"],
+        instruction: "22. Find the underlined part that needs correction. My younger brother is interested on watching television.",
+        sentence: "My younger brother is ____ watching television."
       }
     ];
 

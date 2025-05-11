@@ -54,7 +54,7 @@ const QuizPage = () => {
   const handleNextQuestion = () => {
     const nextIndex = state.currentQuestionIndex + 1;
     
-    if (nextIndex >= questions.length) {
+    if (nextIndex >= quizQuestions.length) {
       setState(prev => ({
         ...prev,
         quizCompleted: true
@@ -90,31 +90,31 @@ const QuizPage = () => {
   };
 
   useEffect(() => {
-    if (questions.length === 0) {
+    if (quizQuestions.length === 0) {
       toast({
-        title: "Loading questions",
-        description: "Please wait while we load the quiz questions.",
+        title: "Đang tải câu hỏi",
+        description: "Vui lòng đợi trong khi chúng tôi tải các câu hỏi kiểm tra.",
       });
     }
-  }, [toast, questions.length]);
+  }, [toast, quizQuestions.length]);
 
-  const currentQuestion = questions[state.currentQuestionIndex];
+  const currentQuestion = quizQuestions[state.currentQuestionIndex];
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-5xl">
       <AdminPanel 
-        questions={questions} 
+        questions={quizQuestions} 
         isAdminMode={state.isAdminMode} 
         toggleAdminMode={toggleAdminMode} 
         onQuestionUpdated={handleQuestionUpdated}
       />
 
-      <QuizHeader state={state} totalQuestions={questions.length} />
+      <QuizHeader state={state} totalQuestions={quizQuestions.length} />
 
       <main>
         {!state.quizStarted && (
           <section className="bg-white rounded-xl shadow-md p-6 mb-8">
-            <h2 className="text-xl font-bold mb-4">MOCK TEST 1</h2>
+            <h2 className="text-xl font-bold mb-4">MOCK TEST 2</h2>
             <div className="mb-4 text-sm text-gray-700">
               <p className="font-medium mb-2">Bài kiểm tra gồm các phần:</p>
               <ul className="list-disc pl-5 space-y-1">
@@ -123,6 +123,9 @@ const QuizPage = () => {
                 <li>Câu 9-12: Câu hỏi trắc nghiệm cơ bản.</li>
                 <li>Câu 13-16: Đọc đoạn văn và điền từ thích hợp vào chỗ trống.</li>
                 <li>Câu 17-20: Đọc đoạn văn và trả lời câu hỏi.</li>
+                <li>Câu 21-24: Tìm phần gạch chân cần sửa và sửa lại cho đúng.</li>
+                <li>Câu 25-28: Viết lại câu sao cho có cùng nghĩa với câu gốc.</li>
+                <li>Câu 29-32: Viết câu sử dụng từ cho sẵn.</li>
               </ul>
             </div>
             <p className="mb-6">Với mỗi câu hỏi, bạn sẽ nhận được phản hồi ngay lập tức sau khi trả lời. Các câu hỏi kéo thả tương tự như Duolingo.</p>
@@ -157,7 +160,7 @@ const QuizPage = () => {
         {state.quizCompleted && (
           <QuizResults 
             state={state} 
-            totalQuestions={questions.length} 
+            totalQuestions={quizQuestions.length} 
             onRestart={handleRestartQuiz} 
           />
         )}
