@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOCK TEST 2 - Trắc nghiệm tiếng Anh</title>
+  <meta name="description" content="Thi trắc nghiệm tiếng Anh với các câu hỏi multiple-choice và bài tập kéo thả dạng Duolingo">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header id="quiz-header" class="hidden">
+      <h1>Nền tảng trắc nghiệm tương tác</h1>
+      <p>Hoàn thành các câu hỏi trắc nghiệm và bài tập kéo thả</p>
+      
+      <div class="progress-container">
+        <div class="progress-info">
+          <span id="question-number">Câu hỏi 1 / 32</span>
+          <span id="score-display">Điểm: 0</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Trang bắt đầu -->
+      <section id="start-screen" class="card">
+        <h2>MOCK TEST 2</h2>
+        <div class="info-container">
+          <p class="subtitle">Bài kiểm tra gồm các phần:</p>
+          <ul class="test-parts">
+            <li>Câu 1-4: Nghe ghi âm và quyết định xem các câu này đúng hay sai.</li>
+            <li>Câu 5-8: Nghe ghi âm hai lần và chọn tùy chọn tốt nhất A, B, C, hoặc D để hoàn thành mỗi câu.</li>
+            <li>Câu 9-12: Câu hỏi trắc nghiệm cơ bản.</li>
+            <li>Câu 13-16: Đọc đoạn văn và điền từ thích hợp vào chỗ trống.</li>
+            <li>Câu 17-20: Đọc đoạn văn và trả lời câu hỏi.</li>
+            <li>Câu 21-24: Tìm phần gạch chân cần sửa và sửa lại cho đúng.</li>
+            <li>Câu 25-28: Viết lại câu sao cho có cùng nghĩa với câu gốc.</li>
+            <li>Câu 29-32: Viết câu sử dụng từ cho sẵn.</li>
+          </ul>
+        </div>
+        <p>Với mỗi câu hỏi, bạn sẽ nhận được phản hồi ngay lập tức sau khi trả lời. Các câu hỏi kéo thả tương tự như Duolingo.</p>
+        <button id="start-button" class="button">Bắt đầu làm bài</button>
+      </section>
+
+      <!-- Khu vực câu hỏi -->
+      <section id="question-area" class="hidden">
+        <!-- Câu hỏi sẽ được thêm vào đây thông qua JavaScript -->
+      </section>
+
+      <!-- Kết quả cuối cùng -->
+      <section id="result-screen" class="card hidden">
+        <h2>Kết quả bài kiểm tra</h2>
+        <div class="result-circle">
+          <span id="percentage">0%</span>
+        </div>
+        <div class="result-message" id="result-message">
+          <!-- Thông báo kết quả sẽ được thêm vào đây -->
+        </div>
+        <div class="result-stats">
+          <div class="stat-box">
+            <h3>Câu trả lời đúng</h3>
+            <p id="correct-count">0</p>
+          </div>
+          <div class="stat-box">
+            <h3>Câu trả lời sai</h3>
+            <p id="incorrect-count">0</p>
+          </div>
+        </div>
+        <button id="restart-button" class="button">Làm lại bài kiểm tra</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Interactive Learning Platform</p>
+    </footer>
+
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-panel">
+      <button id="admin-toggle" class="admin-toggle">Admin Mode</button>
+      <div id="admin-controls" class="admin-controls hidden">
+        <h3>Admin Controls</h3>
+        <div class="admin-form">
+          <label for="question-select">Chọn câu hỏi:</label>
+          <select id="question-select"></select>
+          
+          <div id="answer-editor" class="hidden">
+            <!-- Editor câu trả lời sẽ được thêm vào đây -->
+          </div>
+          
+          <button id="save-changes" class="button admin-save">Lưu thay đổi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
