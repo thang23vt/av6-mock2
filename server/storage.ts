@@ -329,6 +329,96 @@ export class MemStorage implements IStorage {
         correctAnswer: ["interested on"],
         instruction: "22. Find the underlined part that needs correction. My younger brother is interested on watching television.",
         sentence: "My younger brother is ____ watching television."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["In", "home robots", "to do", "housework"],
+        correctAnswer: ["to do"],
+        instruction: "23. Find the underlined part that needs correction. In the future, home robots will to do all our housework.",
+        sentence: "In the future, home robots will ____ all our housework."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["your", "went", "to", "by"],
+        correctAnswer: ["went"],
+        instruction: "24. Find the underlined part that needs correction. Did your brother went to school by bike last year?",
+        sentence: "Did your brother ____ to school by bike last year?"
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["noisier than", "more noisy than", "less quiet than", "not as quiet as"],
+        correctAnswer: ["noisier than"],
+        instruction: "25. Complete the sentence with the same meaning. Hoi An is quieter than Ho Chi Minh City.",
+        sentence: "Ho Chi Minh City is ____ Hoi An."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["because of", "because", "as", "since"],
+        correctAnswer: ["because"],
+        instruction: "26. Complete the sentence with the same meaning. Nam studies very hard, so he always gets good marks.",
+        sentence: "Nam always gets good marks ____ he studies very hard."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["sport is", "game is", "hobby is", "activity is"],
+        correctAnswer: ["sport is"],
+        instruction: "27. Complete the sentence with the same meaning. Lan likes badminton best.",
+        sentence: "Lan's favourite ____ badminton."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["we can plant", "we plant", "we will plant", "we are planting"],
+        correctAnswer: ["we plant"],
+        instruction: "28. Complete the sentence with the same meaning. We plant more trees. The air is fresher.",
+        sentence: "If ____ more trees, the air will be fresher."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["might", "have", "a smart TV", "and", "ten robots"],
+        correctAnswer: ["might", "have", "a smart TV", "and", "ten robots"],
+        instruction: "29. Make a sentence using the given words: My house might / have / smart TV / ten robots.",
+        sentence: "My house ____ ____ ____ ____ ____."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["Mark", "went", "swimming", "with", "his friends", "last Sunday"],
+        correctAnswer: ["Mark", "went", "swimming", "with", "his friends", "last Sunday"],
+        instruction: "30. Make a sentence using the given words: Mark / go / swimming / his friends / last Sunday.",
+        sentence: "____ ____ ____ ____ ____ ____."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["How often", "do", "you", "go", "to", "the library"],
+        correctAnswer: ["How often", "do", "you", "go", "to", "the library"],
+        instruction: "31. Make a sentence using the given words: How often / you / go / the library?",
+        sentence: "____ ____ ____ ____ ____ ____?"
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["I", "will", "visit", "London", "during", "my vacation", "next year"],
+        correctAnswer: ["I", "will", "visit", "London", "during", "my vacation", "next year"],
+        instruction: "32. Make a sentence using the given words: I / visit / London / my vacation / next year.",
+        sentence: "____ ____ ____ ____ ____ ____ ____."
       }
     ];
 
