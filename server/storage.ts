@@ -39,7 +39,7 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "Mi thinks they can recycle things in the bins.",
+        question: "1. Mi thinks they can recycle things in the bins.",
         options: [
           { id: "A", text: "True" },
           { id: "B", text: "False" }
@@ -51,7 +51,7 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "At book fairs, students can exchange the bins.",
+        question: "2. At book fairs, students can exchange the bins.",
         options: [
           { id: "A", text: "True" },
           { id: "B", text: "False" }
@@ -63,7 +63,7 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "Nam thinks students will save money if they go to school by bus.",
+        question: "3. Nam thinks students will save money if they go to school by bus.",
         options: [
           { id: "A", text: "True" },
           { id: "B", text: "False" }
@@ -75,39 +75,25 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "Students can exchange their used uniforms at uniform fairs.",
+        question: "4. Students can exchange their used uniforms at uniform fairs.",
         options: [
           { id: "A", text: "True" },
           { id: "B", text: "False" }
         ],
-        correctAnswer: "B",
+        correctAnswer: "A",
         instruction: null,
         sentence: null
       },
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "Linda's dream house is a big villa ____ the sea.",
+        question: "5. Linda's dream house is a big villa ____ the sea.",
         options: [
           { id: "A", text: "by" },
           { id: "B", text: "in" },
           { id: "C", text: "on" },
           { id: "D", text: "at" }
         ],
-        correctAnswer: "B",
-        instruction: null,
-        sentence: null
-      },
-      {
-        id: this.currentQuestionId++,
-        type: "multipleChoice",
-        question: "Linda's dream house has a view of the ____.",
-        options: [
-          { id: "A", text: "garden" },
-          { id: "B", text: "sea" },
-          { id: "C", text: "pool" },
-          { id: "D", text: "villa" }
-        ],
         correctAnswer: "A",
         instruction: null,
         sentence: null
@@ -115,7 +101,21 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "Linda's dream house has a swimming pool and a ____.",
+        question: "6. Linda's dream house has a view of the ____.",
+        options: [
+          { id: "A", text: "garden" },
+          { id: "B", text: "sea" },
+          { id: "C", text: "pool" },
+          { id: "D", text: "villa" }
+        ],
+        correctAnswer: "B",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "7. Linda's dream house has a swimming pool and a ____.",
         options: [
           { id: "A", text: "sea" },
           { id: "B", text: "villa" },
@@ -129,21 +129,21 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "Nick's dream house is ____ Linda's.",
+        question: "8. Nick's dream house is ____ Linda's.",
         options: [
           { id: "A", text: "similar to" },
           { id: "B", text: "different from" },
           { id: "C", text: "the same as" },
           { id: "D", text: "bigger than" }
         ],
-        correctAnswer: "D",
+        correctAnswer: "B",
         instruction: null,
         sentence: null
       },
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "I ____ an English test tomorrow.",
+        question: "9. I ____ an English test tomorrow.",
         options: [
           { id: "A", text: "have" },
           { id: "B", text: "has" },
@@ -157,12 +157,68 @@ export class MemStorage implements IStorage {
       {
         id: this.currentQuestionId++,
         type: "multipleChoice",
-        question: "They will ____ rubbish at the park next week.",
+        question: "10. They will ____ rubbish at the park next week.",
         options: [
           { id: "A", text: "plant" },
           { id: "B", text: "use" },
           { id: "C", text: "pick up" },
           { id: "D", text: "save" }
+        ],
+        correctAnswer: "C",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "17. The house will be ________.",
+        options: [
+          { id: "A", text: "in the mountains" },
+          { id: "B", text: "on an island" },
+          { id: "C", text: "on the Moon" },
+          { id: "D", text: "by the sea" }
+        ],
+        correctAnswer: "B",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "18. There'll be a ________ in front of the house.",
+        options: [
+          { id: "A", text: "swimming pool" },
+          { id: "B", text: "pond" },
+          { id: "C", text: "big garden" },
+          { id: "D", text: "lake" }
+        ],
+        correctAnswer: "A",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "19. The house will have ________ robots.",
+        options: [
+          { id: "A", text: "many" },
+          { id: "B", text: "a few" },
+          { id: "C", text: "a lot of" },
+          { id: "D", text: "some" }
+        ],
+        correctAnswer: "D",
+        instruction: null,
+        sentence: null
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "multipleChoice",
+        question: "20. The ________ will help me to feed the dogs and cats.",
+        options: [
+          { id: "A", text: "helicopter" },
+          { id: "B", text: "smart phone" },
+          { id: "C", text: "robot" },
+          { id: "D", text: "super smart TV" }
         ],
         correctAnswer: "C",
         instruction: null,
@@ -178,7 +234,7 @@ export class MemStorage implements IStorage {
         question: null,
         options: ["and", "but", "so", "because"],
         correctAnswer: ["but"],
-        instruction: "Complete the sentence by dragging the correct word into the blank.",
+        instruction: "11. Complete the sentence by dragging the correct word into the blank.",
         sentence: "My sister is good at school, ____ I'm not."
       },
       {
@@ -187,7 +243,7 @@ export class MemStorage implements IStorage {
         question: null,
         options: ["him", "she", "her", "hers"],
         correctAnswer: ["hers"],
-        instruction: "Complete the sentence by dragging the correct word into the blank.",
+        instruction: "12. Complete the sentence by dragging the correct word into the blank.",
         sentence: "This pen isn't mine. It's ____."
       },
       {
@@ -196,7 +252,7 @@ export class MemStorage implements IStorage {
         question: null,
         options: ["viewers", "characters", "channels", "comedies"],
         correctAnswer: ["viewers"],
-        instruction: "Complete the sentence by dragging the correct word into the blank.",
+        instruction: "13. Complete the sentence by dragging the correct word into the blank.",
         sentence: "VTV1 is a popular TV channel in Viet Nam. It attracts many ____ because it has interesting programmes."
       },
       {
@@ -205,15 +261,39 @@ export class MemStorage implements IStorage {
         question: null,
         options: ["sports", "animal", "game show", "talent show"],
         correctAnswer: ["animal"],
-        instruction: "Complete the sentence by dragging the correct word into the blank.",
+        instruction: "14. Complete the sentence by dragging the correct word into the blank.",
         sentence: "The ____ programmes show tigers and giraffes in nature."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["comedies", "news", "wildlife", "music"],
+        correctAnswer: ["comedies"],
+        instruction: "15. Complete the sentence by dragging the correct word into the blank.",
+        sentence: "_____ make people laugh because they are funny."
+      },
+      {
+        id: this.currentQuestionId++,
+        type: "dragDrop",
+        question: null,
+        options: ["because", "so", "but", "and"],
+        correctAnswer: ["because"],
+        instruction: "16. Complete the sentence by dragging the correct word into the blank.",
+        sentence: "Game shows are both fun and educational. make people laugh ____ they are funny."
       }
     ];
 
     const allQuestions = [...multipleChoiceQuestions, ...dragDropQuestions];
     
     allQuestions.forEach(question => {
-      this.questions.set(question.id, question as QuizQuestion);
+      // Ensure instruction and sentence are never undefined
+      const fixedQuestion = {
+        ...question,
+        instruction: question.instruction ?? null,
+        sentence: question.sentence ?? null
+      };
+      this.questions.set(question.id, fixedQuestion as QuizQuestion);
     });
   }
 

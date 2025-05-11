@@ -21,10 +21,13 @@ const QuizPage = () => {
 
   const { toast } = useToast();
 
-  const { data: questions = [], refetch } = useQuery<Question[]>({
+  const { data: questions, refetch } = useQuery<Question[]>({
     queryKey: ['/api/questions'],
-    keepPreviousData: true,
+    placeholderData: [],
   });
+  
+  // Ensure questions is always an array
+  const quizQuestions: Question[] = questions || [];
 
   const handleStartQuiz = () => {
     setState(prev => ({
@@ -112,12 +115,22 @@ const QuizPage = () => {
         {!state.quizStarted && (
           <section className="bg-white rounded-xl shadow-md p-6 mb-8">
             <h2 className="text-xl font-bold mb-4">MOCK TEST 1</h2>
-            <p className="mb-4">This interactive quiz consists of multiple-choice questions and drag-and-drop exercises. You will receive immediate feedback after answering each question.</p>
+            <div className="mb-4 text-sm text-gray-700">
+              <p className="font-medium mb-2">Bài kiểm tra gồm các phần:</p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Câu 1-4: Nghe ghi âm và quyết định xem các câu này đúng hay sai.</li>
+                <li>Câu 5-8: Nghe ghi âm hai lần và chọn tùy chọn tốt nhất A, B, C, hoặc D để hoàn thành mỗi câu.</li>
+                <li>Câu 9-12: Câu hỏi trắc nghiệm cơ bản.</li>
+                <li>Câu 13-16: Đọc đoạn văn và điền từ thích hợp vào chỗ trống.</li>
+                <li>Câu 17-20: Đọc đoạn văn và trả lời câu hỏi.</li>
+              </ul>
+            </div>
+            <p className="mb-6">Với mỗi câu hỏi, bạn sẽ nhận được phản hồi ngay lập tức sau khi trả lời. Các câu hỏi kéo thả tương tự như Duolingo.</p>
             <Button 
               onClick={handleStartQuiz} 
               className="bg-primary hover:bg-primary/90 px-6 py-6 text-base font-medium"
             >
-              Start Quiz
+              Bắt đầu làm bài
             </Button>
           </section>
         )}
